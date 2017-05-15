@@ -26,16 +26,16 @@ public class KeyOfSolomon
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
-        proxy.preInit(event);
+        proxy.preInit();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        proxy.init(event);
+        proxy.init();
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-        proxy.postInit(event);
+        proxy.postInit();
     }
 }

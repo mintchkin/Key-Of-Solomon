@@ -8,9 +8,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  */
 public class ModBlocks {
     public static TestBlock testBlock;
+    public static Etching etching;
 
     public static void init() {
         testBlock = new TestBlock();
+        etching = new Etching();
     }
 
     @SideOnly(Side.CLIENT)

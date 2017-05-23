@@ -35,7 +35,7 @@ public class TestItem extends Item {
             return EnumActionResult.FAIL;
         } else {
             pos = pos.offset(facing);
-            if (worldIn.isAirBlock(pos)) {
+            if (worldIn.isAirBlock(pos) && ModBlocks.etching.canPlaceBlockAt(worldIn, pos)) {
                 worldIn.setBlockState(pos, ModBlocks.etching.getDefaultState());
             }
             return EnumActionResult.SUCCESS;
